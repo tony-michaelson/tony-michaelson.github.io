@@ -188,9 +188,13 @@ println(Json.prettyPrint(tree.toJson))
 
 You can see we've adapted the expression of our intent to fit with the idiomatic way of the Scala language. Each language has these patterns and we must learn them because not only can we take advantage of some performance improvements in how our code might be implemented by different languages but we are going to make programmers within the eco-system happier when they work with us.
 
+If you'd like to see how this Scala code looks in a normal project structure look here: [https://github.com/tony-michaelson/scala-btree-example](https://github.com/tony-michaelson/scala-btree-example)
+
+> Lang Tour
+
 Let's take a quick tour of some more languages starting with the common to more esoteric.
 
-We'll take a look at how the programming concepts being expressed become more complex as the languages offer more features.
+We'll take a look at how the syntax features being used become more complex as the languages offer more features.
 
 > Javascript
 
@@ -523,6 +527,8 @@ treeToJson tree =
 - Function parameters (`tree: TreeNode`)
 - Haskell's type inference and type system
 
+### Conclusion
+
 As you can see, the language features can become rather complex depending on what we're going to express our psudocode in! The art of learning languages is all in understanding the nuances of each target language. Once you understand the underlying concepts learing how they are expressed in any language is a secondary process.
 
 It should only take about five programming languages to give you a layout of the landscape but I recommend a list more like:
@@ -536,20 +542,24 @@ It should only take about five programming languages to give you a layout of the
 - **Rust**: Covering modern systems programming with an emphasis on safety and concurrency.
 - **Kotlin or Swift**: For modern mobile app development (Kotlin for Android, Swift for iOS).
 
-### Learning a New Language
+### Topics for Learning a New Language
 
-These are some ideas I believe one should consider when learning a new language.
+These are the primary topics I believe one should cover when learning a new language.
 
-| Consideration                       | Description                                                                                                               |
+| Topic                               | Description                                                                                                               |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **Motivations**                     | Identify your reasons for learning the language. Could be project-specific, career growth, or personal interest.          |
 | **Build Tooling**                   | Familiarize yourself with the build tools and package managers specific to the language for efficient project management. |
 | **Frameworks**                      | Explore the most popular or relevant frameworks that facilitate rapid and structured development in the language.         |
 | **Language Features & Style Guide** | Understand unique language features and adopt standard coding styles for readability and maintainability.                 |
-| **Testing & Debugging**             | Learn the standard practices for testing and debugging in the language to ensure code reliability and quality.            |
-| **Concurrency & Parallelism**       | Explore how the language handles concurrent and parallel programming, essential for high-performance applications.        |
-| **Cross-platform Development**      | Learn about the language's capability for cross-platform development and any platform-specific considerations.            |
-| **Integration Capabilities**        | Understand how to integrate the language with other systems, languages, or frameworks.                                    |
 | **Idioms**                          | Grasp the common idiomatic expressions in the language to write more efficient, readable, and 'native' code.              |
 | **System Libraries**                | Get to know the standard libraries provided by the language for various tasks like networking, file I/O, etc.             |
 | **Community and Ecosystem**         | Engage with the language's community for support, and explore its ecosystem for resources, libraries, and tools.          |
+
+And then cover:
+
+| Topic                          | Description                                                                                                        |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Testing & Debugging**        | Learn the standard practices for testing and debugging in the language to ensure code reliability and quality.     |
+| **Concurrency & Parallelism**  | Explore how the language handles concurrent and parallel programming, essential for high-performance applications. |
+| **Cross-platform Development** | Learn about the language's capability for cross-platform development and any platform-specific considerations.     |
+| **Integration Capabilities**   | Understand how to integrate the language with other systems, languages, or frameworks.                             |

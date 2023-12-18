@@ -15,8 +15,8 @@ menu_settings:
       url: "/"
     - title: "Projects"
       url: "/projects/"
-    - title: "Spiritus Sanctus"
-      url: "/writings/"
+    # - title: "Spiritus Sanctus"
+    #   url: "/writings/"
 
 grid_settings:
   grid_spacing: 10
