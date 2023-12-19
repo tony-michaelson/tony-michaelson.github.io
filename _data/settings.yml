@@ -11,7 +11,7 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: "Programming"
+    - title: "Writings"
       url: "/"
     - title: "Projects"
       url: "/projects/"
