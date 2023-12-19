@@ -1,6 +1,6 @@
 ---
 title: "How to Program in Any Language: Part A"
-date: 2023-07-13 00:00:00
+date: 2023-12-17 00:00:00
 featured_image: "/images/articles/program-any-language.png"
 excerpt: Focus on concepts not syntax
 ---
@@ -71,7 +71,7 @@ Once you practice and understand the fundamental concepts in programming, you be
 
 Now let's take a look at how we might implement our pseudo code in some different languages.
 
-> Scala
+> **Scala**
 
 ```scala
 import play.api.libs.json._
@@ -93,7 +93,7 @@ Json.obj(
 }
 ```
 
-### Usage:
+**Usage:**
 
 ```scala
 val myTree: Tree = Tree(
@@ -122,7 +122,7 @@ treeToJson(myTree)
 
 This code in Scala is an expression of our intent we communicated in our psudocode but to make it a bit more Scala-esk we're going to want to implement this in a more idiomatic way to this language.
 
-> Idiomatic Scala
+> **Idiomatic Scala**
 
 ```scala
 package com.example
@@ -146,7 +146,7 @@ case class Tree(
 }
 ```
 
-### usage:
+**Usage:**
 
 ```scala
 println(Json.prettyPrint(tree.toJson))
@@ -156,13 +156,13 @@ You can see how we've adapted the expression of our intent to align with Scala's
 
 If you'd like to see how this Scala code looks in a normal project structure look here: [https://github.com/tony-michaelson/scala-btree-example](https://github.com/tony-michaelson/scala-btree-example)
 
-> Tour De Lang
+> **Tour De Lang**
 
 Let's take a quick tour of some more languages starting with the common to more esoteric.
 
 We'll note how the syntax features being used become more complex as the languages offer more features. The point of this exercise is to just observe how the concepts we understand from our psudocode are expressed in different grammars. Try to focus on what is the same across all these languages and the differences will also be easier to enumerate.
 
-> Javascript
+> **Javascript**
 
 ```javascript
 function treeToJson(tree) {
@@ -175,7 +175,7 @@ function treeToJson(tree) {
 }
 ```
 
-### Syntax Features Used
+#### Syntax Features Used
 
 - Function declaration and definition
 - Object literal notation
@@ -185,7 +185,7 @@ function treeToJson(tree) {
 - Curly braces `{}` to define code blocks
 - Semicolons `;` to terminate statements
 
-> Typescript
+> **Typescript**
 
 ```typescript
 interface TreeNode {
@@ -205,7 +205,7 @@ function treeToJson(tree: TreeNode): any {
 }
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Interface declaration
 - Type annotations (`: number`, `: TreeNode`, `: string`, `: any`)
@@ -221,7 +221,7 @@ function treeToJson(tree: TreeNode): any {
 - Null (`null`) value
 - TypeScript module system (assuming this code is part of a TypeScript module)
 
-> Dart
+> **Dart**
 
 ```dart
 class Tree {
@@ -248,7 +248,7 @@ class Tree {
 }
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Class declaration (`class Tree`)
 - Field declarations with final keyword (`final int node_id`, `final Tree? left`, `final Tree? right`, `final String name`)
@@ -263,7 +263,7 @@ class Tree {
 - Dart's named argument syntax (`Tree({ ... })`)
 - Return statement (`return { ... }`)
 
-> C
+> **C**
 
 ```c
 #include <stdio.h>
@@ -286,7 +286,7 @@ struct TreeNode* createTreeNode(long node_id, char name[50]) {
 }
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Preprocessor directives (`#include <stdio.h>`, `#include <stdlib.h>`)
 - Structure declaration (`struct TreeNode`)
@@ -302,7 +302,7 @@ struct TreeNode* createTreeNode(long node_id, char name[50]) {
 - Function parameters (e.g., `long node_id`, `char name[50]`)
 - Null pointer assignment (`NULL`)
 
-> Rust
+> **Rust**
 
 ```rust
 use serde::Serialize;
@@ -327,7 +327,7 @@ fn tree_to_json(tree: &Tree) -> Value {
 }
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Rust module system (`use serde::Serialize`, `use serde_json::json`, `use serde_json::Value`)
 - Struct definition (`struct Tree { ... }`)
@@ -344,7 +344,7 @@ fn tree_to_json(tree: &Tree) -> Value {
 - Rust's ownership and borrowing system
 - Struct field access (`tree.node_id`, `tree.name`, `tree.left`, `tree.right`)
 
-> Erlang
+> **Erlang**
 
 ```elixir
 -module(tree).
@@ -364,7 +364,7 @@ tree_to_json(Tree) ->
     ]}.
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Module declaration (`-module(tree).`)
 - Compilation directive (`-compile(export_all).`)
@@ -378,7 +378,7 @@ tree_to_json(Tree) ->
 - Function clauses (`tree_to_json(Tree) -> ...`)
 - Field access (`Tree#tree.node_id`, `Tree#tree.name`, `Tree#tree.left`, `Tree#tree.right`)
 
-> Racket
+> **Racket**
 
 ```lisp
 (define-struct tree (node-id left right name))
@@ -401,7 +401,7 @@ tree_to_json(Tree) ->
       #f))
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Struct definition (`(define-struct tree (node-id left right name))`)
 - Function definition (`(define (create-node node-id left right name) ...)`)
@@ -415,7 +415,7 @@ tree_to_json(Tree) ->
 - Converting between types (e.g., `(tree-node-id tree)`)
 - Null value (`#f`)
 
-> Standard ML
+> **Standard ML**
 
 ```sml
 datatype TreeNode = TreeNode of {
@@ -440,7 +440,7 @@ fun treeToJson (tree: TreeNode): TreeNode option =
       });
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Datatype declaration (`datatype TreeNode = TreeNode of { ... };`)
 - Function definition (`fun treeToJson (tree: TreeNode): TreeNode option = ...`)
@@ -453,7 +453,7 @@ fun treeToJson (tree: TreeNode): TreeNode option =
 - Function parameters (`tree: TreeNode`)
 - Type annotations (`(tree: TreeNode): TreeNode option`)
 
-> Haskell
+> **Haskell**
 
 ```haskell
 data TreeNode = TreeNode {
@@ -479,7 +479,7 @@ treeToJson tree =
         }
 ```
 
-### Syntax Features Used:
+#### Syntax Features Used:
 
 - Data type declaration (`data TreeNode = TreeNode { ... } deriving Show`)
 - Record syntax for data types (`node_id :: Int`, `left :: Maybe TreeNode`, `right :: Maybe TreeNode`, `name :: String`)
