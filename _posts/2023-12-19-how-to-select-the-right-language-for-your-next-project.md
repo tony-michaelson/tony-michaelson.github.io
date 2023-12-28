@@ -220,7 +220,7 @@ These charts depict the number of requests on the X-axis and the corresponding r
 
 To understand the resource allocations for these tests, please refer to the [docker-compose.yml](https://github.com/tony-michaelson/concurrency-testing-framework/blob/main/kotlin/docker-compose.yml) file. It's important to note that these tests are minimal and purely anecdotal, conducted on a local system.
 
-<a href="/pages/concurrency-test-results.html" target="_blank">Test Results Page</a>
+<a href="https://michaelson.blog/pages/concurrency-test-results.html" target="_blank">Test Results Page</a>
 
 #### Analysis
 
