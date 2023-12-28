@@ -1,6 +1,6 @@
 ---
 title: "How to Select the Right Language for your Next Project"
-date: 2023-12-19 00:00:00
+date: 2023-12-28 00:00:00
 featured_image: "/images/articles/program-any-language-b.png"
 excerpt: Choosing the Right Programming Language for Your Project
 ---
@@ -86,7 +86,7 @@ The primary differences in concurrency models between Kotlin, Dart (with Flutter
 
 Each model has its advantages, with Kotlin excelling in structured concurrency, Dart focusing on isolates, and Node.js offering an event-driven and optional multi-threaded approach, catering to a wide range of use cases.
 
-| Aspect                 | Kotlin                                    | Dart Isolates                          | Node.js                                          |
+| Aspect                 | Kotlin                                    | Dart                                   | Node.js                                          |
 | ---------------------- | ----------------------------------------- | -------------------------------------- | ------------------------------------------------ |
 | Concurrency Mechanism  | Coroutine-based concurrency model.        | Concurrent execution via isolates.     | Concurrent execution with workers.               |
 | Execution Environment  | Uses Kotlin coroutines within the JVM.    | Isolated memory heap for each isolate. | Isolated context for each worker.                |
