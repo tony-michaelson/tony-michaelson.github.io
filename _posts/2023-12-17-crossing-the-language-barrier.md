@@ -1,5 +1,5 @@
 ---
-title: "How to Program in Any Language: Part A"
+title: "Crossing the Language Barrier"
 date: 2023-12-17 00:00:00
 featured_image: "/images/articles/program-any-language.png"
 excerpt: Focus on concepts not syntax
@@ -153,8 +153,6 @@ println(Json.prettyPrint(tree.toJson))
 ```
 
 You can see how we've adapted the expression of our intent to align with Scala's idiomatic style. In Scala, it's common to include data transformation methods with a case class. Each language has its unique patterns, and learning them is essential. This not only allows us to leverage potential performance improvements inherent to different languages but also fosters better collaboration with programmers within that language's ecosystem.
-
-If you'd like to see how this Scala code looks in a normal project structure look here: [https://github.com/tony-michaelson/scala-btree-example](https://github.com/tony-michaelson/scala-btree-example)
 
 > **Tour De Lang**
 
@@ -546,7 +544,7 @@ Choosing a programming language for a project is not merely a technical decision
 
 ### Conclusion
 
-It's challenging to cover such a vast subject in such a short essay, but I hope this has served as a worthy starting point for how to approach the landscape of the many programming languages that exist. The most important point that should be derived is to build a map of the landscape based on the capabilities and features of all these languages and core computer science concepts.
+It's challenging to cover such a vast subject in such a short post, but I hope this has served as a worthy starting point for how to approach the landscape of the many programming languages that exist. The most important point that should be derived is to build a map of the landscape based on the capabilities and features of all these languages and core computer science concepts.
 
 A starting point for a fairly comprehensive list of the concepts that one should study to program in any language could be:
 
