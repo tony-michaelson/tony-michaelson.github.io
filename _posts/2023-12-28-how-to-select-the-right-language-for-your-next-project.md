@@ -19,7 +19,7 @@ Continuing from [Crossing The Language Barrier](/blog/crossing-the-language-barr
 | Long-term Maintenance | Fully automated and documented devops pipelines, standard gitflow, gitlab project, automated unit/integration testing, regular dependency update intervals, agile, near-zero tech-debt, and hand off to another team for LTS |
 | Personal Resonance and Team Skills | Ideally same language for the front end and backend for speed and to enable any team member to work on any part of the system |
 
-After investigation, various candidates have been identified as the top choices given the capabilities for mobile development and using the same language for the backend. Of these options Dart and Kotlin would be completely new to the team.
+After investigation, various candidates have been identified as the top choices given the capabilities for mobile development and using the same language for the backend. Of these options Dart and Kotlin would be completely new to me.
 
 - Dart (w/Flutter)
 - TypeScript (w/React Native or Ionic)
@@ -34,7 +34,7 @@ Let's start by comparing the runtime environments.
 - bun 0.6.14
 - kotlin/jvm 17.0.2
 
-Of these options the team has only worked (more than superficially) with the JVM.
+Of these options I have only worked (more than superficially) with the JVM.
 
 #### a). Performance:
 
@@ -135,7 +135,7 @@ I've also included an additional server to simulate streaming and regular HTTP c
 +--------------+  +--------------+  +--------------+  +--------------+  +----------------+
 ```
 
-The endpoints provided by the HTTP server pools will remain the same regardless of the programming language we use to handle these requests. We have endpoint tests in place to ensure that the requests appear identical for each solution we will be testing. When you deploy the system, you will notice that these tests are automatically executed to ensure that the server pool uniformly handles our requests.
+The endpoints provided by the HTTP server pools will remain the same regardless of the programming language we use to handle these requests. I have endpoint tests in place to ensure that the requests appear identical for each solution I will be testing. When you deploy the system, you will notice that these tests are automatically executed to ensure that the server pool uniformly handles our requests.
 
 ```
 $ ./up.sh
@@ -208,7 +208,7 @@ nodejs-test-1 exited with code 0
 
 This simulation mirrors real-world scenarios that are likely to occur in a cloud environment.
 
-The primary objective is to create task work that closely resembles our actual use cases. We aim to observe how each solution performs under conditions that closely resemble our product's deployment in a production environment.
+The primary objective is to create task work that closely resembles our actual use cases. I aim to observe how each solution performs under conditions that closely resemble our product's deployment in a production environment.
 
 These tasks also serve to test how different solutions handle a mix of simple requests executed concurrently with CPU-intensive ones. Additionally, tasks like `/consume` will concurrently consume `/stream`. This diverse set of operations includes both long and short-running I/O operations, time-consuming CPU operations, and memory-intensive tasks. The variety of request types will undoubtedly highlight the strengths of different runtime environments.
 
@@ -238,17 +238,17 @@ While these are anecdotal local system tests, they have provided us with valuabl
 
 ##### Kotlin
 
-To set up a Kotlin multiplatform project in IntelliJ, the website directs us to install the plugin and create a new project using Android Studio. However, this process doesn't automatically set up a target for the backend. Fortunately, with some investigation, we discovered this [useful project starter tool](https://kmp.jetbrains.com/) from JetBrains.
+To set up a Kotlin multiplatform project in IntelliJ, the website directs us to install the plugin and create a new project using Android Studio. However, this process doesn't automatically set up a target for the backend. Fortunately, with some investigation, I discovered this [useful project starter tool](https://kmp.jetbrains.com/) from JetBrains.
 
-Initially, the project didn't build successfully, and it required some experimentation with different Java versions until we understood the necessary configuration. Additionally, we had to accept the Android licenses, which necessitated using Java 8, and manually copy the license files into the project. None of these steps were immediately obvious to us, and the error messages were somewhat misleading.
+Initially, the project didn't build successfully, and it required some experimentation with different Java versions until I understood the necessary configuration. Additionally, I had to accept the Android licenses, which necessitated using Java 8, and manually copy the license files into the project. None of these steps were immediately obvious to us, and the error messages were somewhat misleading.
 
-Once we got the project up and running, it became easy to understand the layout and relationships between the sub-projects. We also found a Gradle task for running the backend and deploying the project to Android or iOS for testing the UIs. The turnaround time for making a simple UI change and applying it to the app in the Android simulator on my machine was approximately 2.5 seconds after the initial setup.
+Once I got the project up and running, it became easy to understand the layout and relationships between the sub-projects. I also found a Gradle task for running the backend and deploying the project to Android or iOS for testing the UIs. The turnaround time for making a simple UI change and applying it to the app in the Android simulator on my machine was approximately 2.5 seconds after the initial setup.
 
 It's worth noting that the UI API is the same as [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation), and the Compose Multiplatform project implements this API for other platforms.
 
 ##### Flutter
 
-Setting up a Flutter project was straightforward, and everything worked out of the box. While there isn't an option for including a backend project, it's easy enough to add one manually. The [Flutter UI](https://docs.flutter.dev/ui) framework compiles the UI for all platform targets, and the hot reload feature works very well for all the platforms we tested. Flutter's ability to maintain the application state between reloads makes UI development remarkably smooth. Intuitively, it feels like a significant time-saving in the UI development process.
+Setting up a Flutter project was straightforward, and everything worked out of the box. While there isn't an option for including a backend project, it's easy enough to add one manually. The [Flutter UI](https://docs.flutter.dev/ui) framework compiles the UI for all platform targets, and the hot reload feature works very well for all the platforms I tested. Flutter's ability to maintain the application state between reloads makes UI development remarkably smooth. Intuitively, it feels like a significant time-saving in the UI development process.
 
 ##### Summary
 
