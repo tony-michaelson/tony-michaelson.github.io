@@ -17,7 +17,7 @@ Rust is a modern, multi-paradigm programming language known for its focus on saf
 | Concurrency Without Fear | The ownership model naturally prevents data races, making concurrent programming more approachable and less error-prone.    |
 | Zero-Cost Abstractions   | Provides high-level abstractions without sacrificing performance, often matching or even surpassing C/C++ in speed.         |
 | Eco-System and Tooling   | Offers robust tooling, including Cargo for package management, and a growing ecosystem of libraries and frameworks.         |
-| Cross-Platform Support   | Supports a wide range of platforms, from embedded systems to web assembly.                                                  |
+| Cross-Platform Support   | Supports a wide range of platforms, from embedded systems to WebAssembly.                                                   |
 
 ### Primary Use Cases
 
@@ -43,7 +43,7 @@ Rust projects are built by `cargo` and you can create a new project with `cargo 
 my_rust_project/
   ├── src/
   │   ├── main.rs        # The main entry point of your program
-  │   └── lib.rs         # Module file if you're creating a library crate
+  │   └── lib.rs         # Module file for library crates
   ├── Cargo.toml         # Manifest file for package metadata and dependencies
   └── README.md          # Documentation and project description
 ```
@@ -165,9 +165,11 @@ macro_rules! println {
     () => {
         $crate::print!("\n")
     };
-    ($($arg:tt)*) => {{
-        $crate::io::_print($crate::format_args_nl!($($arg)*));
-    }};
+    ($($arg:tt)*) => {
+        $crate::io::_print(
+            $crate::format_args_nl!($($arg)*)
+        );
+    };
 }
 ```
 
@@ -182,8 +184,8 @@ Which I have yet to see anyone do!
 
 ### Variable Binding
 
-- it's either `let` or `const`
-- it has type inferencing
+- use either let or const
+- it supports type inferencing
 - you can shadow
 - immutable by default
 - add `mut` to define a mutable variable
@@ -555,7 +557,7 @@ fn main() {
 }
 ```
 
-Cloning a mutable variable
+Cloning a mutable variable.
 
 ```rust
 fn main() {
