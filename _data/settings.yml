@@ -49,6 +49,9 @@ social_settings:
   bandcamp_url: ""
   linkedin_url: "https://www.linkedin.com/in/anthony-ian-michaelson"
 
+feed_settings:
+  rss_url: "http://michaelson.blog/feed.xml"
+
 color_settings:
   background_color: "#ffffff"
   background_alt_color: "#F5F7FA"
