@@ -1,7 +1,7 @@
 ---
 title: "Crossing the Language Barrier"
 date: 2023-12-17 00:00:00
-featured_image: "/images/articles/program-any-language.png"
+featured_image: "/images/articles/m/program-any-language.png"
 excerpt: Focus on concepts not syntax
 ---
 

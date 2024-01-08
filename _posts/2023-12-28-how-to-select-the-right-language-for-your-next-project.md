@@ -1,7 +1,7 @@
 ---
 title: "How to Select the Right Language for your Next Project"
 date: 2023-12-28 00:00:00
-featured_image: "/images/articles/program-any-language-b.png"
+featured_image: "/images/articles/m/program-any-language-b.png"
 excerpt: Choosing the Right Programming Language for Your Project
 ---
 

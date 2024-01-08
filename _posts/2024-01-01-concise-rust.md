@@ -1,7 +1,7 @@
 ---
 title: "Concise Rust"
 date: 2024-01-01 00:00:00
-featured_image: "/images/articles/concise-rust.png"
+featured_image: "/images/articles/m/concise-rust.png"
 excerpt: A concise language guide for getting productive in Rust as quickly as possible.
 ---
 

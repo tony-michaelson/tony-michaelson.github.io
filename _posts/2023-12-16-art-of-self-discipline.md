@@ -2,7 +2,7 @@
 title: "The Art of Self-Discipline"
 excerpt: Defining self-discipline and how I learned it.
 date: 2023-12-16 05:03:00 +0000
-featured_image: /images/articles/self-discipline-miyamoto.png
+featured_image: /images/articles/m/self-discipline-miyamoto.png
 ---
 
 Discipline is a form of art. The most fitting definition being:
