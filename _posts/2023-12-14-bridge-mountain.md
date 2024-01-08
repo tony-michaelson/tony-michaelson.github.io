@@ -2,7 +2,7 @@
 title: "What I Learned About Entrepreneurship on Bridge Mountain"
 excerpt: A metaphorical tale of enduring the perils of entrepreneurship in the great outdoors.
 date: 2023-12-14 05:03:00 +0000
-featured_image: "/images/articles/bridge-mountain.png"
+featured_image: "/images/articles/m/bridge-mountain.png"
 ---
 
 At the first moment I hit the trail, I recognized my legs felt like lead weights due to previous activity in the week. My love of the trail gave me no pause and I five finger shoe'd my way onward pushing myself as hard as I could to keep a normal pace.
