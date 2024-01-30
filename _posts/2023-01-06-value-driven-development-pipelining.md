@@ -46,8 +46,6 @@ The methods of validation you choose will necessarily be specific to your servic
 
 The first feature is typically very important in a design process. If we think of it in terms of the [Pareto Principle](https://en.wikipedia.org/wiki/Pareto_principle), then 20% of our features are going to yield 80% of the value delivered to our customers. It's entirely possible to reach this 80/20 ratio with the initial monetizable feature set. This is a process of experimentation and discovery. Value needs to be validated and shipped in rapid iterations until this threshold is discovered. Create a pipeline of all the features you expect to include in version 1 of your product, prioritize them, and start shipping.
 
-In my case, I launched an app on the Apple App Store that initially had only one button; when pressed, it counted how many times the button was pressed. This was essentially the default product created with Flutter's default project scaffold. The reviewers did a good job preventing the release of an app that lacked any discernible value, but what I've done on this project is reverse the typical process of delivering and selling an app by starting with no initial value and gradually adding features one at a time as I cross each milestone until customers begin to pay for the product.
-
 > Credit to [Ram](https://www.linkedin.com/in/ramcsingh/) for inspiring me on this one :D
 
 An example first MFS from my current project is:
