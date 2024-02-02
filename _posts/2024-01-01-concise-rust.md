@@ -21,8 +21,6 @@ Rust is a modern, multi-paradigm programming language known for its focus on saf
 
 ### Primary Use Cases
 
-You can arrange the additional information into a Markdown table like this:
-
 | Use Case                      | Description                                                                                                                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Systems Programming           | Ideal for building operating systems, file systems, and other systems-level components due to its speed and safety.                                                                  |
