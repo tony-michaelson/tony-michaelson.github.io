@@ -13,8 +13,8 @@ menu_settings:
   menu_items:
     - title: "Writings"
       url: "/"
-    - title: "Projects"
-      url: "/projects/"
+    - title: "Portfolio"
+      url: "/portfolio/"
     # - title: "Spiritus Sanctus"
     #   url: "/writings/"
 
