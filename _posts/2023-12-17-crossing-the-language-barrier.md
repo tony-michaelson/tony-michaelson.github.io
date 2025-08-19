@@ -41,7 +41,7 @@ Programming is about expressing your intent to a computer system and knowing the
 
 Once you practice and understand the fundamental concepts in programming, you become language agnostic. Each language may introduce new concepts. You simply add these to your toolbelt. Then, reflect on the other languages you've learned to see how these concepts might be expressed, now armed with this new knowledge.
 
-Now let's take a look at how we might implement our pseudo code in some different languages.
+Now let's take a look at how we might implement processing a btree in some different languages.
 
 > **Scala**
 
