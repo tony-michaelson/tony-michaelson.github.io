@@ -17,53 +17,25 @@ When you comprehend these underlying principles, you realize that, irrespective 
 
 As you embark on this journey, remember that learning a new programming language is not starting anew, but rather, it's adding another instrument to your orchestra. Each language allows you to compose the symphony of your project in a unique way, yet the music's essence remains rooted in the universal principles of computer science.
 
-For example, consider the logic of processing a common data structure like a binary tree.
+For example, consider the logic of this factorial function.
 
 ```python
-# data structure
-class Tree:
-    node_id: integer
-    left: Tree (or null)
-    right: Tree (or null)
-    name: string
-
-# convert a Tree to JSON
-function tree_to_json(tree):
-    if tree is null:
-        return null
-    else:
-        json_tree = {
-            "node_id": tree.node_id,
-            "name": tree.name,
-            "left": tree_to_json(tree.left),
-            "right": tree_to_json(tree.right)
-        }
-        return json_tree
+def factorial_non_tail(n):
+    if n <= 1:
+        return 1
+    return n * factorial_non_tail(n - 1)
 ```
 
 and compare this to the logical difference of using tail-recursion:
 
 ```python
-# data structure
-class Tree:
-    node_id: integer
-    left: Tree (or null)
-    right: Tree (or null)
-    name: string
-
-# convert a Tree to JSON
-def tree_to_json(tree):
-    if tree is None:
-        return None
-    return {
-        "node_id": tree.node_id,
-        "name": tree.name,
-        "left": tree_to_json(tree.left),
-        "right": tree_to_json(tree.right)
-    }
+def factorial_tail(n, accumulator=1):
+    if n <= 1:
+        return accumulator
+    return factorial_tail(n - 1, n * accumulator)
 ```
 
-The important element is understanding the logic required to transform a Tree data structure into a valid JSON string. This needs to be done efficiently, regardless of the size of the data input. A lack of understanding of tail-recursion can lead to code plagued by stack overflow errors and slow performance. Worse, it might cause the processing of one system user to adversely impact others.
+The important element is understanding the logic required to calculate the factorial. This needs to be done efficiently and a lack of understanding of tail-recursion can lead to code plagued by stack overflow errors and slow performance. Worse, it might cause the processing of one system user to adversely impact others.
 
 Programming is about expressing your intent to a computer system and knowing the methods of implementation well enough to design a good overall system.
 
